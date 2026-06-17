@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-# Ignore nested project folders and runtime artifacts
-my-react-app/
-"tourist admin dashboared"/
-models/
-scripts/
-*.log
-=======
 # Logs
 logs
 *.log
@@ -24,28 +16,16 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .idea
->>>>>>> 86af456b45c04bee51ec25b07df4c613ff874f93
+
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
-<<<<<<< HEAD
-dist/
-node_modules/
-
-default.local
-*.local
-
-# Python
-venv/
 backend/
-=======
 # Python
 venv/
->>>>>>> 86af456b45c04bee51ec25b07df4c613ff874f93
 backend/venv/
 backend/temp/
 __pycache__/

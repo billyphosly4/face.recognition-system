@@ -6,7 +6,7 @@ import Dashboard from './pages/Dashboard';
 import GuideRegister from './components/GuideRegister';
 import './App.css';
 
-const API_BASE = 'http://127.0.0.1:5000';
+const API_BASE = 'https://backend-face-recognition-jlle.onrender.com';
 
 function App() {
   const [page, setPage] = useState('home'); // 'home' | 'login' | 'signup' | 'dashboard' | 'guide-register'

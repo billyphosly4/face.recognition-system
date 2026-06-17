@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Auth.css';
 
-const API_BASE = 'http://127.0.0.1:5000';
+const API_BASE = 'https://backend-face-recognition-jlle.onrender.com';
 
 export default function Signup({ setPage }) {
   const [formData, setFormData] = useState({

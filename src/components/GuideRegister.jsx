@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import './GuideRegister.css';
 
-const API_BASE = 'http://127.0.0.1:5000';
+const API_BASE = 'https://backend-face-recognition-jlle.onrender.com';
 
 export default function GuideRegister() {
   /* ── Form state ─────────────────────────────────────────────── */
