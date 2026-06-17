@@ -1,0 +1,8 @@
+flask>=3.0.0
+flask-cors>=4.0.0
+deepface>=0.0.92
+opencv-python-headless>=4.8.0.0
+numpy>=1.23.0
+firebase-admin>=6.2.0
+onnxruntime>=1.27.0
+onnx>=1.22.0

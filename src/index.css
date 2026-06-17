@@ -1,0 +1,97 @@
+:root {
+  /* Travel Theme Palette */
+  --primary: #0d9488;          /* Deep Teal / Emerald Green */
+  --primary-hover: #0f766e;
+  --secondary: #eab308;        /* Warm Sand / Soft Gold */
+  --secondary-hover: #ca8a04;
+  
+  /* Neutrals */
+  --text: #1f2937;             /* Charcoal Text */
+  --text-muted: #4b5563;       /* Medium Gray for descriptions */
+  --text-h: #111827;           /* Near Black for headings */
+  --bg: #ffffff;               /* Clean White */
+  --bg-light: #f9fafb;         /* Light Gray background */
+  --border: #e5e7eb;           /* Soft border lines */
+  --code-bg: #f3f4f6;          /* Code blocks / mock UI indicators */
+  
+  /* Accents & States */
+  --accent: var(--primary);
+  --accent-bg: rgba(13, 148, 136, 0.06);
+  --accent-border: rgba(13, 148, 136, 0.25);
+  --sand-bg: rgba(234, 179, 8, 0.08);
+  --sand-border: rgba(234, 179, 8, 0.3);
+  
+  --success: #10b981;
+  --success-bg: rgba(16, 185, 129, 0.08);
+  --success-border: rgba(16, 185, 129, 0.3);
+  
+  --error: #ef4444;
+  --error-bg: rgba(239, 68, 68, 0.08);
+  --error-border: rgba(239, 68, 68, 0.3);
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  
+  font: 16px/1.6 var(--sans);
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg-light);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--text-h);
+  margin-top: 0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+button {
+  font-family: var(--sans);
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  background-color: var(--code-bg);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
