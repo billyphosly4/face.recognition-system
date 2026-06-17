@@ -5,3 +5,26 @@ models/
 scripts/
 *.log
 .DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+dist/
+node_modules/
+
+default.local
+*.local
+
+# Python
+venv/
+backend/
+backend/venv/
+backend/temp/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+backend/firebase-credentials.json
