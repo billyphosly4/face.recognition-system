@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import GuideRegister from './components/GuideRegister';
 import './App.css';
 
+// Production backend URL - deployed on Render
 const API_BASE = 'https://backend-face-recognition-jlle.onrender.com';
 
 function App() {
