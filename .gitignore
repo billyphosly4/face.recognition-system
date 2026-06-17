@@ -1,0 +1,7 @@
+# Ignore nested project folders and runtime artifacts
+my-react-app/
+"tourist admin dashboared"/
+models/
+scripts/
+*.log
+.DS_Store
