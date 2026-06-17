@@ -1,9 +1,30 @@
+<<<<<<< HEAD
 # Ignore nested project folders and runtime artifacts
 my-react-app/
 "tourist admin dashboared"/
 models/
 scripts/
 *.log
+=======
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+>>>>>>> 86af456b45c04bee51ec25b07df4c613ff874f93
 .DS_Store
 *.suo
 *.ntvs*
@@ -11,6 +32,7 @@ scripts/
 *.sln
 *.sw?
 
+<<<<<<< HEAD
 dist/
 node_modules/
 
@@ -20,6 +42,10 @@ default.local
 # Python
 venv/
 backend/
+=======
+# Python
+venv/
+>>>>>>> 86af456b45c04bee51ec25b07df4c613ff874f93
 backend/venv/
 backend/temp/
 __pycache__/
