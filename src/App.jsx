@@ -7,7 +7,7 @@ import GuideRegister from './components/GuideRegister';
 import './App.css';
 
 // Production backend URL - deployed on Render
-const API_BASE = 'https://backend-face-recognition-jlle.onrender.com';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
 
 function App() {
   const [page, setPage] = useState('home'); // 'home' | 'login' | 'signup' | 'dashboard' | 'guide-register'

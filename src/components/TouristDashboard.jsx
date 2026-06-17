@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './TouristDashboard.css';
 
-const API_BASE = 'https://backend-face-recognition-jlle.onrender.com';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
 
 export default function TouristDashboard() {
   /* ── Guide list state ──────────────────────────────────────── */

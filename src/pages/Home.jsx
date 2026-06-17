@@ -66,7 +66,7 @@ export default function Home({ setPage }) {
               <polygon points="200,350 250,220 280,350" fill="#eab308" opacity="0.8" />
               {/* Safety Badge Floating */}
               <g transform="translate(40, 40)">
-                <rect width="130" height="40" rx="20" fill="rgba(255,255,255,0.15)" backdropFilter="blur(8px)" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
+                <rect width="130" height="40" rx="20" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
                 <circle cx="20" cy="20" r="10" fill="#eab308" />
                 <path d="M17 20l2 2 4-4" stroke="#1f2937" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 <text x="38" y="24" fill="#ffffff" fontSize="11" fontWeight="bold" fontFamily="sans-serif">VERIFIED USER</text>

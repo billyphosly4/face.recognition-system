@@ -15,5 +15,14 @@ export default defineConfig({
         '**/tourist admin dashboared/**',
       ],
     },
+    // Proxy /api requests to the Render backend during local development.
+    // This makes requests appear same-origin to the browser — no CORS preflight needed.
+    proxy: {
+      '/api': {
+        target: 'https://backend-face-recognition-jlle.onrender.com',
+        changeOrigin: true,
+        secure: true,
+      },
+    },
   },
 })

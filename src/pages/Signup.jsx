@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Auth.css';
 
-const API_BASE = 'https://backend-face-recognition-jlle.onrender.com';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
 
 export default function Signup({ setPage }) {
   const [formData, setFormData] = useState({
