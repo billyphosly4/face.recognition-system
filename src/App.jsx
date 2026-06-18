@@ -6,7 +6,7 @@ import Dashboard from './pages/Dashboard';
 import GuideRegister from './components/GuideRegister';
 import './App.css';
 
-// Production backend URL - deployed on Render
+// Production backend URL - deployed on Hugging Face Spaces
 const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
 
 function App() {
@@ -49,12 +49,16 @@ function App() {
       .catch(() => {});
   };
 
+  // ── Smart Status Polling (Optimized for Biometric Traffic) ──
   useEffect(() => {
     fetchStatus();
-    // Poll status every 15s to keep dashboard sync'd
-    const interval = setInterval(fetchStatus, 15000);
-    return () => clearInterval(interval);
-  }, []);
+    
+    // Only set up a status loop if the user is authenticated on the dashboard
+    if (currentUser) {
+      const interval = setInterval(fetchStatus, 30000); // 30 seconds interval safely prevents request stacking
+      return () => clearInterval(interval);
+    }
+  }, [currentUser]);
 
   const handleLogout = () => {
     setCurrentUser(null);
