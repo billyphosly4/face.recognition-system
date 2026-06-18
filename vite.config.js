@@ -22,6 +22,8 @@ export default defineConfig({
         target: 'https://backend-face-recognition-jlle.onrender.com',
         changeOrigin: true,
         secure: true,
+        proxyTimeout: 90000,  // 90s — Render free tier can take ~60s to wake up
+        timeout: 90000,
       },
     },
   },
